@@ -1,0 +1,125 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(to bottom, #FF5000, #DB4500);
+    margin: auto;
+    padding: 120px 32px 39px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    max-height: 560px;
+    height: 100%;
+}
+
+.modal-content .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.modal-content .img-area{
+    position: absolute;
+    z-index: 0;
+    right: 32px;
+    bottom: 183px;
+    overflow: inherit;
+}
+.modal-content .img-area img:nth-of-type(2){
+    width: 72px;
+    position: absolute;
+    left: -28px;
+    z-index: 3;
+    height: 72px;
+    top: 110px;
+}
+.modal-content .text-area{
+    z-index: 2;
+    position: absolute;
+}
+.modal-content .logo-area{
+    max-width: 172px;
+    height: auto;
+    margin-bottom: 55px;
+}
+.modal-content .title-area{
+    margin-bottom: 16px;
+}
+.modal-content .title-area h2{
+    font-size: 87px;
+    line-height: 80px;
+    text-align: left;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.modal-content .description-area{
+    
+    text-align: left;
+    margin-bottom: 34px;
+    max-width: 471px;
+}
+.modal-content .description-area p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#confirmCloseBtn {
+    text-align: left;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 325;
+    font-family: "Montserrat", sans-serif;
+    bottom: 39px;
+    z-index: 100000;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .modal-content{
+        padding: 190px 32px 39px;
+    }
+    .modal-content .img-area{
+        width: 170px;
+        right: 32px;
+        bottom: 275px;
+    }
+    .modal-content .img-area img:nth-of-type(2){
+        width: 50px;
+        height: 50px;
+        top: 49px;
+        left: -16px;
+    }
+    .modal-content .title-area h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .modal-content .logo-area{
+        margin-bottom: 26px;
+    }
+}

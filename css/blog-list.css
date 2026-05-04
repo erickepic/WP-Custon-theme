@@ -1,0 +1,109 @@
+/* Asegura que el contenedor se comporte correctamente en modo slider */
+.swiper-container-blog {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.blog-listado{
+    position: relative;
+    max-width: 1224px;
+    margin: auto;
+}
+
+.swiper-wrapper {
+    display: flex; /* Asegura que las tarjetas se dispongan horizontalmente */
+}
+
+.swiper-slide {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-image-area img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-text-area {
+    padding: 15px;
+}
+
+.blog-date {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.blog-title {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.blog-content {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.blog-excerpt {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.read-more {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.swiper-container-blog .swiper-pagination .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    margin: 4px;
+}
+.swiper-container-blog .swiper-pagination .swiper-pagination-bullet-active{
+    background: #FF5000;
+}
+.swiper-container-blog .swiper-button-next,
+.swiper-container-blog .swiper-button-prev {
+    color: #fff;
+    top: 100%; /* Alinea los botones verticalmente con el centro del contenedor */
+    transform: translateY(-50%); /* Ajusta la posición para centrar los botones */
+    margin: 0 10px;
+    position: absolute;
+
+}
+.swiper-container-blog .swiper-button-next:hover,
+.swiper-container-blog .swiper-button-prev:hover{
+    opacity: .7;
+}
+.swiper-container-blog .swiper-button-next::after,
+.swiper-container-blog .swiper-button-prev::after{
+    content: "";
+}
+.swiper-container-blog .swiper-button-prev{
+    left: 76%;
+}
+.swiper-container-blog .swiper-button-next{
+    right: 15%;
+}
+.swiper-container-blog .swiper-button-next img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+.img-area img {
+    width: 100%; /* Asegura que las flechas ocupen todo el espacio del botón */
+}

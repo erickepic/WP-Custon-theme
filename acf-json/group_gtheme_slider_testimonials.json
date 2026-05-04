@@ -1,0 +1,70 @@
+{
+    "key": "group_gtheme_slider_testimonials",
+    "title": "Gtheme Slider Testimonials",
+    "fields": [
+        {
+            "key": "field_gtheme_slider_appearance",
+            "label": "Slider Appearance",
+            "name": "slider_appearance",
+            "type": "select",
+            "choices": {
+                "uno": "Style 1 (Global)",
+                "dos": "Style 2 (Culture)",
+                "tres": "Style 3 (Memories)"
+            },
+            "default_value": "uno",
+            "ui": 1
+        },
+        {
+            "key": "field_gtheme_slider_items",
+            "label": "Testimonials",
+            "name": "testimonials_repeater",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Testimonial",
+            "sub_fields": [
+                {
+                    "key": "field_gtheme_slider_img",
+                    "label": "Client Image",
+                    "name": "client_image",
+                    "type": "image",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_gtheme_slider_name",
+                    "label": "Client Name",
+                    "name": "client_name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_gtheme_slider_company",
+                    "label": "Company / Location",
+                    "name": "client_company",
+                    "type": "text"
+                },
+                {
+                    "key": "field_gtheme_slider_text",
+                    "label": "Testimonial",
+                    "name": "testimonial_text",
+                    "type": "textarea"
+                },
+                {
+                    "key": "field_gtheme_slider_btn",
+                    "label": "Button (Optional)",
+                    "name": "button",
+                    "type": "link"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/gtheme-slider-testimonials"
+            }
+        ]
+    ],
+    "active": true
+}

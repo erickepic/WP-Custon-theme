@@ -1,0 +1,150 @@
+.gdev-blog{
+    position: relative;
+}
+
+.gdev-blog .g-section-inner{
+    position: relative;
+    padding: 0px 25px;
+}
+
+.gdev-blog .g-section-inner h2{
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.75em;
+    line-height: 57px;
+    color:#383838 ;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 41px;
+}
+.gdev-blog .g-section-inner p{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 32px;
+    color: #7D7D7D;
+    max-width: 676px;
+    margin: auto;
+    margin-bottom: 78px;
+}
+.gdev-blog .btn-primary{
+    display: inline-block;
+}
+.gdev-blog .g-section-inner .blog-posts-list .swiper-container-mainblog {
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-pagination{
+    bottom: -5px;
+    left: 10%;
+    display: flex;
+    max-width: 40%;
+    width: unset;
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-pagination .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-pagination .swiper-pagination-bullet-active{
+    background: #FF5000;
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-button-next,
+.blog-posts-list .swiper-container-mainblog  .swiper-button-prev {
+    color: #fff;
+    top: 100%; /* Alinea los botones verticalmente con el centro del contenedor */
+    transform: translateY(-50%); /* Ajusta la posición para centrar los botones */
+    margin: 0 10px;
+    position: absolute;
+
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-button-next:hover,
+.blog-posts-list .swiper-container-mainblog  .swiper-button-prev:hover{
+    opacity: .7;
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-button-next::after,
+.blog-posts-list .swiper-container-mainblog  .swiper-button-prev::after{
+    content: "";
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-button-prev{
+    left: 76%;
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-button-next{
+    right: 15%;
+}
+.blog-posts-list .swiper-container-mainblog  .swiper-button-next img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+.gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .testimonial-head-area{
+    display: flex;
+    flex-direction: column;
+}
+.gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .testimonial-head-area .img-area{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+.gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .testimonial-head-area .client-area{
+    margin-bottom: 0;
+    font-size: 3em;
+    margin-bottom: 37px;
+    line-height: 63px;
+    font-weight: 600;
+    color: #383838;
+    font-family: "Montserrat", sans-serif;
+}
+.gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .testimonial-text-area{
+    text-align: left;
+}
+.gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .testimonial-text-area p{
+    color: #666666;
+    max-width: 100%;
+    margin-bottom: 21px;
+}
+.gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .button-area{
+    margin-bottom: 86px;
+}
+.gdev-blog a.view-article{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    .testimonials .g-section-inner .section-titles .title-area h2{
+        font-size: 22px;
+        line-height: normal;
+    }
+    .testimonials .g-section-inner .section-titles .title-area,
+    .testimonials .g-section-inner .section-titles{
+        margin-bottom: 40px;
+    }
+    .blog-posts-list .swiper-container-mainblog  .swiper-button-prev{
+        left: 65%;
+    }
+    .blog-posts-list .swiper-container-mainblog  .swiper-button-next{
+        right: 13%;
+    }
+    .blog-posts-list .swiper-container-mainblog  .swiper-pagination{
+        left: 14%;
+    }
+    .gdev-blog .g-section-inner .swiper-container-testimonials .swiper-slide .slide-content .box-area .testimonial-text-area {
+        line-height: 24px;
+    }
+    .gdev-blog .g-section-inner h2{
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .gdev-blog .g-section-inner p{
+        font-size: 1em;
+        margin-bottom: 36px;
+    }
+    .gdev-blog .blog-posts-list .swiper-container-mainblog  .box-area .testimonial-head-area .client-area h3{
+        font-size: 2em;
+        line-height: 40px;
+    }
+}

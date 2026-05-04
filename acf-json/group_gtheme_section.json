@@ -1,0 +1,93 @@
+{
+    "key": "group_gtheme_section",
+    "title": "Gtheme Section Settings",
+    "fields": [
+        {
+            "key": "field_gs_id",
+            "label": "Section ID",
+            "name": "section_id",
+            "type": "text",
+            "wrapper": { "width": "33" }
+        },
+        {
+            "key": "field_gs_bgcolor",
+            "label": "Background Color",
+            "name": "bg_color",
+            "type": "color_picker",
+            "wrapper": { "width": "33" }
+        },
+        {
+            "key": "field_gs_sides",
+            "label": "Side Padding",
+            "name": "padding_sides",
+            "type": "true_false",
+            "ui": 1,
+            "wrapper": { "width": "33" }
+        },
+        {
+            "key": "field_gs_padding_top",
+            "label": "Padding Top (Desktop)",
+            "name": "padding_top",
+            "type": "text",
+            "placeholder": "80px",
+            "wrapper": { "width": "25" }
+        },
+        {
+            "key": "field_gs_padding_bottom",
+            "label": "Padding Bottom (Desktop)",
+            "name": "padding_bottom",
+            "type": "text",
+            "placeholder": "80px",
+            "wrapper": { "width": "25" }
+        },
+        {
+            "key": "field_gs_padding_top_mob",
+            "label": "Padding Top (Mobile)",
+            "name": "padding_top_mobile",
+            "type": "text",
+            "placeholder": "40px",
+            "wrapper": { "width": "25" }
+        },
+        {
+            "key": "field_gs_padding_bottom_mob",
+            "label": "Padding Bottom (Mobile)",
+            "name": "padding_bottom_mobile",
+            "type": "text",
+            "placeholder": "40px",
+            "wrapper": { "width": "25" }
+        },
+        {
+            "key": "field_gs_bgimage",
+            "label": "Background Image",
+            "name": "bg_image",
+            "type": "image",
+            "return_format": "url",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_gs_bgimage_pos",
+            "label": "Image Position",
+            "name": "bg_image_pos",
+            "type": "select",
+            "choices": {
+                "center center": "Center",
+                "top center": "Top Center",
+                "bottom center": "Bottom Center",
+                "left center": "Left Center",
+                "right center": "Right Center"
+            },
+            "wrapper": { "width": "50" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/gtheme-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "active": true
+}

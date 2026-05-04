@@ -1,0 +1,135 @@
+footer {
+    padding: 60px 0;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .gdev-footer-container .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+footer .gdev-footer-container .footer-columns .widget_block {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer .gdev-footer-container .footer-columns .widget_block .title-area {
+    margin-bottom: 20px;
+}
+
+footer .gdev-footer-container .footer-columns .widget_block .title-area p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+footer .copy-area p {
+    font-size: 14px;
+    margin: 0;
+    color: #ccc;
+}
+
+footer .links-area ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .links-area ul li a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .links-area ul li a:hover {
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    border-radius: 8px;
+    color: #333;
+    text-align: center;
+}
+
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-body .logo-area img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.modal-body .title-area h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.modal-body .description-area p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.modal-footer {
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    footer .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    footer .links-area ul {
+        justify-content: center;
+    }
+}

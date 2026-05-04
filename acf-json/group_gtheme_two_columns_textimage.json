@@ -1,0 +1,74 @@
+{
+    "key": "group_gtheme_two_columns_textimage",
+    "title": "Gtheme Two Columns TextImage",
+    "fields": [
+        {
+            "key": "field_gtheme_tc_appearance",
+            "label": "Block Appearance",
+            "name": "block_appearance",
+            "type": "select",
+            "wrapper": { "width": "50" },
+            "choices": {
+                "uno": "Style 1 (Services)",
+                "dos": "Style 2 (Service Card)",
+                "tres": "Style 3 (Agenda)",
+                "cuatro": "Style 4 (Directivos)"
+            },
+            "default_value": "uno"
+        },
+        {
+            "key": "field_gtheme_tc_animation",
+            "label": "Enable Animation (AOS)?",
+            "name": "enable_animation",
+            "type": "true_false",
+            "wrapper": { "width": "50" },
+            "ui": 1
+        },
+        {
+            "key": "field_gtheme_tc_rows",
+            "label": "Content Rows",
+            "name": "rows",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_gtheme_tc_row_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_gtheme_tc_row_content",
+                    "label": "Content",
+                    "name": "main_content",
+                    "type": "textarea"
+                },
+                {
+                    "key": "field_gtheme_tc_row_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_gtheme_tc_row_link",
+                    "label": "Button / Link",
+                    "name": "link",
+                    "type": "link",
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/gtheme-two-columns-textimage"
+            }
+        ]
+    ],
+    "active": true
+}

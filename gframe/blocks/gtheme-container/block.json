@@ -1,0 +1,17 @@
+{
+    "name": "acf/gtheme-container",
+    "title": "Gtheme Container",
+    "description": "Container with adjustable width.",
+    "category": "formatting",
+    "icon": "welcome-add-page",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gtheme-container.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "mode": false,
+        "jsx": true
+    }
+}

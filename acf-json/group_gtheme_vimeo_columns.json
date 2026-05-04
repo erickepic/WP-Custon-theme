@@ -1,0 +1,57 @@
+{
+    "key": "group_gtheme_vimeo_columns",
+    "title": "Gtheme Vimeo Columns",
+    "fields": [
+        {
+            "key": "field_gtheme_vimeo_main_title",
+            "label": "Main Title",
+            "name": "main_title",
+            "type": "text"
+        },
+        {
+            "key": "field_gtheme_vimeo_link",
+            "label": "Vimeo Link",
+            "name": "vimeo_link",
+            "type": "text",
+            "instructions": "Example: https://player.vimeo.com/video/968320825"
+        },
+        {
+            "key": "field_gtheme_vimeo_title_left",
+            "label": "Left Title",
+            "name": "title_left",
+            "type": "text",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_gtheme_vimeo_title_right",
+            "label": "Right Title",
+            "name": "title_right",
+            "type": "text",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_gtheme_vimeo_text_left",
+            "label": "Left Text",
+            "name": "text_left",
+            "type": "textarea",
+            "wrapper": { "width": "50" }
+        },
+        {
+            "key": "field_gtheme_vimeo_text_right",
+            "label": "Right Text",
+            "name": "text_right",
+            "type": "textarea",
+            "wrapper": { "width": "50" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/gtheme-vimeo-columns"
+            }
+        ]
+    ],
+    "active": true
+}

@@ -1,0 +1,103 @@
+
+.gdev-agenda .gdev-row:nth-of-type(1){
+    max-width: 530px;
+    margin: auto;
+    margin-bottom: 90px;
+    justify-content: center;
+    text-align: center;
+}
+.gdev-agenda .gdev-row:nth-of-type(1)  h2{
+    font-size: 3em;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 72px;
+    color:#F5F5F5;
+    margin-bottom: 31px;
+}
+.gdev-agenda .gdev-row:nth-of-type(1) p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 27px;
+    color:#F5F5F5;
+}
+.gdev-agenda .services3{
+    gap: 137px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gdev-agenda .services3 .service-area{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 25%;
+    flex: 1 1 15%;
+    text-align: center;
+    justify-content: flex-end;
+}
+.gdev-agenda .services3 .service-area .img-column .img-area{
+    max-width: 106px;
+    margin-bottom: 29px;
+    border-radius: 24px;
+}
+
+.gdev-agenda .services3 .service-area .text-column .service-title h3{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 36px;
+    color: #F5F5F5;
+    margin-bottom: 17px;
+}
+
+.gdev-agenda .services3 .service-area .text-column .service-description p{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 24.5px;
+    color: #F5F5F5;
+}
+.gdev-agenda .gdev-row:nth-of-type(2){
+    justify-content: center;
+}
+.gdev-agenda .gdev-row:nth-of-type(2) .gdev-button-area{
+    display: contents;
+}
+.gdev-agenda .btn-primary{
+    padding: 0;
+}
+
+.gdev-agenda .btn-primary a:hover{
+    background-color: #dc4500!important;
+}
+
+@media (max-width: 768px) {
+    .gdev-agenda .gdev-row:nth-of-type(1) h2{
+        font-size: 1.5em;
+        line-height: 32px;  
+    }
+    .gdev-agenda .gdev-row:nth-of-type(1) p{
+        font-size: 1em; 
+    }
+    .gdev-agenda .gdev-row:nth-of-type(1){
+        margin-bottom: 45px;
+    }
+    .gdev-agenda .services3{
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 45px;
+    }
+    .gdev-agenda .services3 .service-area{
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .gdev-agenda .services3 .service-area .img-column .img-area{
+        max-width: 80px;
+        margin-bottom: 18px;
+    }
+    .gdev-agenda .services3 .service-area .text-column .service-title h3{
+        font-size: 1.15em;
+        line-height: 13px;
+    }
+}

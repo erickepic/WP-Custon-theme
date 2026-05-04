@@ -1,0 +1,80 @@
+{
+    "key": "group_gtheme_general_settings",
+    "title": "Gtheme General Settings",
+    "fields": [
+        {
+            "key": "field_ggs_logo",
+            "label": "Site Logo",
+            "name": "gtheme_logo",
+            "type": "image",
+            "return_format": "array"
+        },
+        {
+            "key": "field_ggs_copyright",
+            "label": "Copyright Text",
+            "name": "gtheme_copyright",
+            "type": "text",
+            "instructions": "Example: Company Name. All rights reserved.",
+            "default_value": "Company Name. All rights reserved."
+        },
+        {
+            "key": "field_ggs_layout",
+            "label": "Layout Settings",
+            "name": "gtheme_layout",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_ggs_header_width",
+                    "label": "Header Max Width (px)",
+                    "name": "header_max_width",
+                    "type": "number",
+                    "default_value": 1200
+                },
+                {
+                    "key": "field_ggs_content_width",
+                    "label": "Content Max Width (px)",
+                    "name": "content_max_width",
+                    "type": "number",
+                    "default_value": 1140
+                },
+                {
+                    "key": "field_ggs_footer_width",
+                    "label": "Footer Max Width (px)",
+                    "name": "footer_max_width",
+                    "type": "number",
+                    "default_value": 1200
+                }
+            ]
+        },
+        {
+            "key": "field_ggs_contact",
+            "label": "Contact Information",
+            "name": "gtheme_contact_info",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_ggs_email",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "text"
+                },
+                {
+                    "key": "field_ggs_phone",
+                    "label": "Phone",
+                    "name": "phone",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "active": true
+}

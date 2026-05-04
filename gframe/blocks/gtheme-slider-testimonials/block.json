@@ -1,0 +1,18 @@
+{
+    "name": "acf/gtheme-slider-testimonials",
+    "title": "Gtheme Slider Testimonials",
+    "description": "Carousel for client testimonials.",
+    "category": "formatting",
+    "icon": "slides",
+    "apiVersion": 2,
+    "keywords": ["testimonials", "slider", "carousel"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "gtheme-slider-testimonials.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "mode": false,
+        "jsx": true
+    }
+}

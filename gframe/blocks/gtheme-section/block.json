@@ -1,0 +1,17 @@
+{
+    "name": "acf/gtheme-section",
+    "title": "Gtheme Section",
+    "description": "Section with customizable background and padding.",
+    "category": "formatting",
+    "icon": "welcome-write-blog",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gtheme-section.php"
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "mode": false,
+        "jsx": true
+    }
+}

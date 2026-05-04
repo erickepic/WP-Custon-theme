@@ -1,0 +1,188 @@
+header {
+    background-color: #234970;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.gdev-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.gdev-logo img {
+  width: 220px;
+  height: auto;
+  display: block;
+}
+#menu-main-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+}
+.menu-item:nth-of-type(5) {
+    margin-left: auto;
+}
+.menu-item:nth-of-type(5),
+.menu-item:nth-of-type(6),
+.menu-item:nth-of-type(7) {
+    margin-right: 14px;
+}
+
+.menu-item a {
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.menu-item:not(.btn-primary) a {
+    border-bottom: 1px solid transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.menu-item:not(.btn-primary) a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.menu-item-has-children {
+    position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    /* background: #fd4f00; */
+    pointer-events: none;
+    /* width: max-content; */
+    padding: 17px 0 0 0;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-item-has-children .sub-menu .menu-item {
+   padding: 12px 30px;
+   background: #234970;
+  width: max-content;
+}
+
+.menu-item-has-children .sub-menu .menu-item a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.menu-item-has-children .sub-menu .menu-item a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.gdev-header-container .btn-primary  {
+    padding: 0px 21px;
+    border: 1px solid white;
+    margin-right: -16px;
+}
+.gdev-header-container .btn-primary:hover  {
+    border: 1px solid white;
+}
+.gdev-header-container .btn-primary.g-btn-brown  {
+    background-color: #00347E;
+    margin-right: 0;
+}
+.gdev-header-container .btn-primary.g-btn-brown:hover  {
+    background-color: #1a3754;
+}
+
+/* Ocultar el menú móvil en pantallas grandes */
+#menu-mobile-menu{
+  display: none;
+}
+.menu-toggle{
+  display: none;
+}
+
+/* Mostrar el menú móvil solo en pantallas pequeñas */
+@media (max-width: 768px) {
+  #mobile-menu {
+      display: block;
+  }
+  .menu-toggle{
+    background: unset;
+    display: block;
+    position: absolute;
+    appearance: unset;
+    top: 20px;
+    border: none;
+    font-size: 20px;
+    color: white;
+  }
+  .gdev-logo {
+    margin: 0 auto;
+}
+  .active{
+    display: block!important;
+    position: absolute;
+  }
+  #menu-mobile-menu {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+.mobile-menu .menu-item {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+}
+.mobile-menu .menu-item:nth-of-type(5), .menu-item:nth-of-type(6), .menu-item:nth-of-type(7){
+  margin-right: 0;
+}
+.mobile-menu .menu-item-has-children{
+  position: relative;
+}
+.mobile-menu .menu-item-has-children .sub-menu{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  opacity: 0;
+  z-index: 10;
+}
+
+.mobile-menu .menu-item-has-children .sub-menu.active {
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.mobile-menu .menu-item-has-children .sub-menu .menu-item{
+  padding: 0;
+  width: unset;
+  margin-bottom: 8px;
+}
+  /* Si el menú principal debe desaparecer en móviles */
+  #menu-main-menu{
+      display: none;
+  }
+  .gdev-header-container{
+    display: block;
+  }
+  .gdev-header-container .mobile-menu .btn-primary {
+    padding: 6px 21px ;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+}

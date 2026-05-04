@@ -1,0 +1,85 @@
+{
+    "key": "group_gtheme_modals",
+    "title": "Gtheme Modals & Popups",
+    "fields": [
+        {
+            "key": "field_gm_welcome_enable",
+            "label": "Enable Welcome Modal?",
+            "name": "gtheme_show_modal",
+            "type": "true_false",
+            "ui": 1
+        },
+        {
+            "key": "field_gm_welcome_image",
+            "label": "Modal Image",
+            "name": "gtheme_modal_image",
+            "type": "image",
+            "return_format": "array",
+            "conditional_logic": [
+                [
+                    {
+                        "param": "field_gm_welcome_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_gm_welcome_title",
+            "label": "Modal Title",
+            "name": "gtheme_modal_title",
+            "type": "text",
+            "conditional_logic": [
+                [
+                    {
+                        "param": "field_gm_welcome_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_gm_welcome_text",
+            "label": "Modal Text",
+            "name": "gtheme_modal_text",
+            "type": "textarea",
+            "conditional_logic": [
+                [
+                    {
+                        "param": "field_gm_welcome_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_gm_welcome_btn_text",
+            "label": "Button Text",
+            "name": "gtheme_modal_btn_text",
+            "type": "text",
+            "default_value": "Got it!",
+            "conditional_logic": [
+                [
+                    {
+                        "param": "field_gm_welcome_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "active": true
+}

@@ -1,0 +1,12 @@
+.swiper-container-testimonialslol  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+}
+.swiper-container-testimonialslol  .swiper-pagination {
+    bottom: -5px;
+    display: flex;
+    max-width: 40%;
+    width: unset;
+}
+

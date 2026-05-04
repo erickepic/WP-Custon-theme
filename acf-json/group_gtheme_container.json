@@ -1,0 +1,45 @@
+{
+    "key": "group_gtheme_container",
+    "title": "Gtheme Container Settings",
+    "fields": [
+        {
+            "key": "field_gc_id",
+            "label": "Container ID",
+            "name": "container_id",
+            "type": "text",
+            "wrapper": { "width": "33" }
+        },
+        {
+            "key": "field_gc_tag",
+            "label": "HTML Tag",
+            "name": "container_tag",
+            "type": "select",
+            "choices": {
+                "div": "div",
+                "section": "section",
+                "article": "article",
+                "main": "main"
+            },
+            "default_value": "div",
+            "wrapper": { "width": "33" }
+        },
+        {
+            "key": "field_gc_role",
+            "label": "Role Attribute",
+            "name": "container_role",
+            "type": "text",
+            "placeholder": "presentation",
+            "wrapper": { "width": "33" }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/gtheme-container"
+            }
+        ]
+    ],
+    "active": true
+}

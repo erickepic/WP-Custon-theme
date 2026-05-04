@@ -1,0 +1,71 @@
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+    transform: translateY(-40px); /* Flota hacia arriba */
+  }
+  100% {
+    transform: translateY(40px); /* Flota hacia abajo */
+  }
+}
+
+/* Animación para la rotación */
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floatRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-60px) rotate(5deg); /* Flota más hacia arriba y rota ligeramente */
+  }
+  50% {
+    transform: translateY(0) rotate(0deg); /* Vuelve a la posición original y sin rotación */
+  }
+  75% {
+    transform: translateY(-60px) rotate(-5deg); /* Flota más hacia arriba y rota hacia el otro lado */
+  }
+  100% {
+    transform: translateY(0) rotate(0deg); /* Vuelve a la posición original */
+  }
+}
+
+.img-floatRotate {
+  animation: floatRotate 3s infinite ease-in-out; /* Animación más rápida y con más desplazamiento */
+}
+
+.img-rotate {
+  animation: rotateImage 2s infinite ease-in-out;
+}
+
+/* Aplicar la animación a todas las imágenes que floten */
+.img-float {
+  animation: float 5s infinite ease-in-out alternate; /* Animación más rápida y mayor desplazamiento */
+}
+
+/* Variaciones para diferentes tiempos de animación */
+
+.float-delay-1 {
+  animation-duration: 6s; /* Animación moderada */
+}
+
+.float-delay-2 {
+  animation-duration: 10s; /* Animación más lenta */
+}

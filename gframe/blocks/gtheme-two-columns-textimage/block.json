@@ -1,0 +1,18 @@
+{
+    "name": "acf/gtheme-two-columns-textimage",
+    "title": "Gtheme Two Columns TextImage",
+    "description": "Two columns section with text and image.",
+    "category": "formatting",
+    "icon": "editor-ul",
+    "apiVersion": 2,
+    "keywords": ["columns", "text", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "gtheme-two-columns-textimage.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "mode": false,
+        "jsx": true
+    }
+}

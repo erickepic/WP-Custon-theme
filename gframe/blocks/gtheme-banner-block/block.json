@@ -1,0 +1,17 @@
+{
+    "name": "acf/gtheme-banner-block",
+    "title": "Gtheme Banner Block",
+    "description": "Dynamic banner block for headers.",
+    "category": "formatting",
+    "icon": "editor-ul",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "gtheme-banner-block.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "mode": false,
+        "jsx": true
+    }
+}
